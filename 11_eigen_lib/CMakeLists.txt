@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.6)
 
-SET(CMAKE_BUILD_TYPE "RELEASE")
+#SET(CMAKE_BUILD_TYPE "RELEASE")
 
 #Eigen is header only, ...
 #... its header files are installed at standard path /usr/include/eigen3/...

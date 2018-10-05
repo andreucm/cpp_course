@@ -21,17 +21,21 @@ int main(int argc, char *argv[])
 
 	// a 3x3 matrix of doubles
 	Eigen::Matrix3d MA;
-	MA << 1.1, 1.2, 1.3, 2.1, 2.2, 2.3, 3.1, 3.2, 3.3; 
+	MA << 1.1, 1.2, 1.3, 2.1, 2.2, 2.3, 3.1, 3.2, 3.3;
+	MA(2,2) = 12;
 	std::cout << "MA: " << std::endl << MA << std::endl;
 
 	// a 3x3 zero matrix and Identity matrix
 	Eigen::Matrix<double, 3, 3> MZ3 = Eigen::Matrix3d::Zero();
 	Eigen::Matrix<double, 3, 3> MI3 = Eigen::Matrix3d::Identity();
+	std::cout << "MZ3: " << std::endl << MZ3 << std::endl;
 
 	// a 6x6 zero matrix and Identity matrix
 	Eigen::Matrix<double, 6, 6> MZ6 = Eigen::Matrix<double, 6, 6>::Zero();
 	Eigen::Matrix<double, 6, 6> MI6 = Eigen::Matrix<double, 6, 6>::Identity();
+	std::cout << "MI6: " << std::endl << MI6 << std::endl;
 
+/*
 	// an unknown size matrix and resizing
     Eigen::MatrixXd MXd;
 	MXd.resize(4,7);
@@ -57,7 +61,7 @@ int main(int argc, char *argv[])
 
 	//matrix inverse, and check that AA-1 = I
 
-
+*/
 
 
     return 0;
