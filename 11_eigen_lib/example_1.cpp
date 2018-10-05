@@ -64,7 +64,9 @@ int main(int argc, char *argv[])
 	std::cout << "v3: " << v3.transpose() << std::endl;
 
 	//matrix inverse, and check that AA-1 = I
-
+	Eigen::Matrix<double, 6, 6> MR6 = Eigen::Matrix<double, 6, 6>::Zero();
+	MR6.setRandom(6,6);
+	std::cout << "MR6: " << std::endl << MR6 << std::endl;
 
 
     return 0;
