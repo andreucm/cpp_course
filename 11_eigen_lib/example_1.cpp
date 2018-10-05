@@ -65,7 +65,7 @@ int main(int argc, char *argv[])
 
 	//matrix inverse, and check that AA-1 = I
 	Eigen::Matrix<double, 6, 6> MR6 = Eigen::Matrix<double, 6, 6>::Zero();
-	MR6.setRandom(6,6);
+	MR6 = 15*MR6.setRandom(6,6);
 	std::cout << "MR6: " << std::endl << MR6 << std::endl;
 
 
