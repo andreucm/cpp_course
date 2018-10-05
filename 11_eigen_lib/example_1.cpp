@@ -58,6 +58,8 @@ int main(int argc, char *argv[])
 	std::cout << "v2: " << v2.transpose() << std::endl;
 	double dot_result = v1.dot(v2);
 	std::cout << "v1·v2 = " << dot_result << std::endl;
+	double angle = acos(dot_result);
+	std::cout << "angle = " << angle*180/M_PI << std::endl;
 
 	//matrix inverse, and check that AA-1 = I
 
