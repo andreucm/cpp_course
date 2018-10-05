@@ -51,7 +51,7 @@ int main(int argc, char *argv[])
 	//norm, dot, cross
 	Eigen::Vector3d v1, v2, v3;
 	v1 << 1,  2, 0;
-	v2 << 0, -2, 4.7;
+	v2 << 2, -1, 0;
 	v1.normalize();
 	v2.normalize();
 	std::cout << "v1: " << v1.transpose() << std::endl;
@@ -60,6 +60,8 @@ int main(int argc, char *argv[])
 	std::cout << "v1·v2 = " << dot_result << std::endl;
 	double angle = acos(dot_result);
 	std::cout << "angle = " << angle*180/M_PI << std::endl;
+	v3 = v1.cross(v2);
+	std::cout << "v3: " << v3.transpose() << std::endl;
 
 	//matrix inverse, and check that AA-1 = I
 
