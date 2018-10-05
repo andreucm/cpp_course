@@ -7,4 +7,4 @@ cmake_minimum_required(VERSION 2.6)
 #... so it is not require neither to find package , nor to add any include path
 
 ADD_EXECUTABLE(example_1 example_1.cpp)
-ADD_EXECUTABLE(transform transform.cpp)
+ADD_EXECUTABLE(example_2 example_2.cpp)
