@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
 	Eigen::Matrix<double, 6, 6> MI6 = Eigen::Matrix<double, 6, 6>::Identity();
 	std::cout << "MI6: " << std::endl << MI6 << std::endl;
 
-/*
+
 	// an unknown size matrix and resizing
     Eigen::MatrixXd MXd;
 	MXd.resize(4,7);
@@ -44,6 +44,7 @@ int main(int argc, char *argv[])
 	MXd(3,6) = -3.14;
 	std::cout << "MXd: " << std::endl << MXd << std::endl;
 
+/*
 	// accessing to matrix block
 	std::cout << "MXd(1:3,4:7) = " << MXd.block<3,4>(1,4) << std::endl;
 	std::cout << "MXd(1:3,4:7) = " << MXd.block(1,4,3,4) << std::endl;
